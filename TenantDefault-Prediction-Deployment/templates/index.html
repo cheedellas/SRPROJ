@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Tenant Default Predictor</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='Tenant-Default-favicon.ico') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Website Title -->
+    	<div class="container">
+            <h2 class='container-heading'><span class="heading_font">Tenant Default Predictor</span></h2>
+            <div class='description'>
+    			<p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
+    		</div>
+    	</div>
+
+        <!-- Text Area -->
+    	<div class="ml-container">
+    		<form action="{{ url_for('predict') }}" method="POST">
+                <input class="form-input" type="text" name="gender" placeholder="Gender eg. 0 or 1"><br>
+                <input class="form-input" type="text" name="issec8" placeholder="IS_SEC8 eg. 0 or 1"><br>
+                <input class="form-input" type="text" name="monthlygrossincome" placeholder="Monthly Gross Income eg.5600"><br>
+                <input class="form-input" type="text" name="fico" placeholder="FICO Score eg. 650"><br>
+
+        		<input type="submit" class="my-cta-button" value="Predict">
+        	</form>
+    	</div>
+
+        <!-- Footer -->
+       <div class='footer'>
+           <p class='footer-description'>Made with ❤️ by Srinivasarao Cheedella.</p>
+       </div>
+
+    </body>
+</html>
