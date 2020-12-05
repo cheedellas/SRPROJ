@@ -24,9 +24,14 @@
     	<div class="ml-container">
     		<form action="{{ url_for('predict') }}" method="POST">
                 <input class="form-input" type="text" name="gender" placeholder="Gender eg. 0 or 1"><br>
-                <input class="form-input" type="text" name="issec8" placeholder="IS_SEC8 eg. 0 or 1"><br>
-                <input class="form-input" type="text" name="monthlygrossincome" placeholder="Monthly Gross Income eg.5600"><br>
-                <input class="form-input" type="text" name="fico" placeholder="FICO Score eg. 650"><br>
+                <input class="form-input" type="text" name="MonthlyGrossIncome" placeholder="Monthly Gross Income eg.5600"><br>
+                <input class="form-input" type="text" name="FICO" placeholder="FICO Score eg. 650"><br>
+				<input class="form-input" type="text" name="Age" placeholder="AGE eg. 24 or 35"><br>
+				<input class="form-input" type="text" name="EverEvicted" placeholder="Ever Evicted eg. 0 or 1"><br>
+				<input class="form-input" type="text" name="CriminalChargers" placeholder="Criminal Chargers eg. 0 or 1"><br>
+				<input class="form-input" type="text" name="FileBankruptcy" placeholder="File Bankruptcy eg. 0 or 1"><br>
+				<input class="form-input" type="text" name="IsSec8" placeholder="IS_SEC8 eg. 0 or 1"><br>
+				<input class="form-input" type="text" name="HasCollections" placeholder="Has Collections eg. 0 or 1"><br>
 
         		<input type="submit" class="my-cta-button" value="Predict">
         	</form>
