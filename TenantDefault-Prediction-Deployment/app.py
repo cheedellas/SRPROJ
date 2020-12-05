@@ -17,14 +17,14 @@ def home():
 def predict():
     if request.method == 'POST':
         gen = int(request.form['gender'])
-		mgi = int(request.form['MonthlyGrossIncome'])
-		fic = int(request.form['FICO'])
-		agev = int(request.form['Age'])
-		EvEvicted = int(request.form['EverEvicted'])
-		CrimChargers = int(request.form['CriminalChargers'])
-		FLBankruptcy = int(request.form['FileBankruptcy'])
-		sec8 = int(request.form['IsSec8'])
-		HsCollections = int(request.form['HasCollections'])
+        mgi = int(request.form['MonthlyGrossIncome'])
+        fic = int(request.form['FICO'])
+        agev = int(request.form['Age'])
+        EvEvicted = int(request.form['EverEvicted'])
+        CrimChargers = int(request.form['CriminalChargers'])
+        FLBankruptcy = int(request.form['FileBankruptcy'])
+        sec8 = int(request.form['IsSec8'])
+        HsCollections = int(request.form['HasCollections'])
       
         
         data = np.array([[gen, mgi, fic, agev, EvEvicted, CrimChargers, FLBankruptcy, sec8, HsCollections]])
